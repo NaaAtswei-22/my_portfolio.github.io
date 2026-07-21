@@ -38,3 +38,57 @@ body {
 section {
     padding: 8rem 0;
 }
+
+/* Navigation Styles */
+.nav {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+    border-bottom: 1px solid var(--border);
+    backdrop-filter: blur(10px);
+}
+
+.nav-content {
+    height: 80px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    font-weight: 800;
+    letter-spacing: -1px;
+}
+
+.links a {
+    text-decoration: none;
+    color: var(--gray-text);
+    font-size: 0.9rem;
+    font-weight: 500;
+    transition: 0.3s;
+    margin-left: 2rem;
+}
+
+.links a:hover {
+    color: var(--fg);
+}
+
+/* Hero Styles */
+.hero-title {
+    font-size: clamp(3rem, 10vw, 6rem);
+    font-weight: 800;
+    letter-spacing: -3px;
+    line-height: 0.9;
+    margin-bottom: 2rem;
+}
+
+.text-muted {
+    color: #444;
+}
+
+.hero-subline {
+    font-size: 1.25rem;
+    color: var(--gray-text);
+    max-width: 500px;
+}
